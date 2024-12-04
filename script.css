@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 1;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212; /* Тёмный фон */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    width: 360px;
+    height: 800px;
+    background: url('Play\ \(4\).png') no-repeat center center; 
+    background-size: cover; 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 225px;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    letter-spacing: 1px;
+}
+
+
+.gold-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.earn-rate {
+    margin: 160px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    letter-spacing: 1px;
+}
+
+
+
+.mining-button .icon img {
+    margin-top: 10px;
+    width: 270px;
+    height: 270px;
+}
+
+.mining-button:hover {
+    transform: scale(1.01); 
+}
+
+.navigation {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column; /* Ставим текст под иконкой */
+    align-items: center;
+    width: 60px; /* Общий размер кнопки */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем рамки */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    font-family: 'Orbitron';
+    letter-spacing: 0.5 px;
+}
+
+.nav-button img {
+    margin-bottom: 2px; /* Отступ между иконкой и текстом */
+}
+
+.nav-button span {
+    font-size: 12px;
+    color: #F7931A; /* Цвет текста */
+}
+
+
+img[alt="Game Icon"] {
+    margin-top: 2.5px;
+    width: 26px;
+    height: 27px;
+}
+
+/* Размер для иконки Fren */
+img[alt="Fren Icon"] {
+    width: 30px;
+    height: 30px;
+}
+
+/* Размер для иконки Task */
+img[alt="Task Icon"] {
+    width: 30px;
+    height: 30px;
+}
+
+/* Размер для иконки Store */
+img[alt="Store Icon"] {
+    width: 36px;
+    height: 30px;
+}
+
+
+
+.nav-button:hover {
+    transform: scale(1.1); 
+}
+
+.nav-button:hover span {
+    color: #c27415; 
+}
